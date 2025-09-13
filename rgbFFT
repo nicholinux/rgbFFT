@@ -1,0 +1,26 @@
+!pip -q install -U "tensorflow>=2.15,<3.0"
+from pathlib import Path
+
+import tensorflow as tf
+
+from google.colab import drive
+drive.mount('/content/drive')
+
+PARENT = Path("/content/drive/MyDrive/RGB FFT Research")
+
+
+train_ds, val_ds = keras.utils.image_dataset_from_directory(
+    "/content/drive/MyDrive/RGB FFT Research/train",
+    image_size=(128,128),
+    batch_size=32,
+    validation_split=0.1, ## using 10% as per your example
+    subset="both",
+    seed=1337 ## just chose the first number that came to mind
+)
+
+test_ds = keras.utils.image_dataset_from_directory(
+    "/content/drive/MyDrive/RGB FFT Research",
+    image_size=(128,128),
+    batch_size=32,
+    shuffle=False
+)
