@@ -2,9 +2,6 @@
 """
 Combined data loader and trainer for RGB FFT Research project.
 
-Loads training and test images from Google Drive using Keras ImageDataGenerator,
-then builds and trains a simple CNN model using TensorFlow/Keras.
-Also generates a confusion matrix and heatmap after training.
 """
 
 import os
