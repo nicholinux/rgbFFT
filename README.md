@@ -6,6 +6,7 @@ It is a comparative study of two image analysis techniques in the context of det
 
 As AI image generation becomes growingly more sophisticated, it will become more difficult to differentiate between real and fake artwork. As a proof of concept, I wanted to create a tool that could help ensure fellow art enthusiasts are buying truly handmade pieces. 
 
-# Update 12/16/2025
+# Update
 
-RGB model is up and running, but development is on hold while I review additional litearture on image classification and representation learning.
+I am discontinuing this project, as I have narrowed down my focus of research.
+The new repository can be found here: https://github.com/nicholinux/computational_analysis_impressionist_visual_structure/tree/main
